@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>タイトル</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        .navbar .navbar-toggle.collapsed .icon-bar:nth-of-type(1) {
+            transform: rotate(0deg);
+            top: 0;
+        }
+
+        .navbar .navbar-toggle.collapsed .icon-bar:nth-of-type(2) {
+            opacity: 1;
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .navbar .navbar-toggle.collapsed .icon-bar:nth-of-type(3) {
+            transform: rotate(0deg);
+            bottom: 0;
+        }
+
+        .navbar .navbar-toggle .icon-bar {
+            position: relative;
+            transition: all 200ms ease-in-out;
+        }
+
+        .navbar .navbar-toggle .icon-bar:nth-of-type(1) {
+            transform: rotate(45deg);
+            top: 6px;
+        }
+
+        .navbar .navbar-toggle .icon-bar:nth-of-type(2) {
+            opacity: 0;
+            width: 0;
+            margin-left: 50%;
+        }
+
+        .navbar .navbar-toggle .icon-bar:nth-of-type(3) {
+            transform: rotate(-45deg);
+            bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" href="#main-nav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">テキスト</a>
+    </div>
+    <div id="main-nav" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">テキスト</a></li>
+            <li><a href="#">テキスト1</a></li>
+            <li><a href="#">テキスト2</a></li>
+            <li><a href="#">テキスト3</a></li>
+            <li class="visible-sm visible-xs"><a href="#">テキスト4</a></li>
+            <li class="visible-sm visible-xs"><a href="#">テキスト5</a></li>
+            <li class="visible-xs"><a href="#">テキスト6</a></li>
+        </ul>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

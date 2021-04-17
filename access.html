@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ネクストレージ株式会社 アーアールティー株式会社は安心安全なソフトウェア構築を目指す、受託開発、人材提供を行っています。">
+    <meta name="author" content="NexTradge.jp,ネクストレージ株式会社,NexTradge(株),イーエヌ株式会社,アーアールティー(株),ＴｙｐｅＳａｆｅ株式会社,ＴｙｐｅＳａｆｅ(株)">
+    <title>お問い合せ | アクセス | ネクストレージ株式会社</title>
+    <link rel="icon" href="images/logo/NexTradge128_128.ico" sizes="">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/NexTradge-180x180.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="ty_header"></div>
+<div class="container">
+    <hr>
+    <div class="row">
+        <div class="col-sm-4">
+            <h2 class="business_description">お問い合せ</h2>
+            <address>
+                <span class="glyphicon glyphicon-envelope icon_right mail-icon"></span>電話番号: <span>03-XXXX-0X9X</span>
+                <br><span class="glyphicon glyphicon-phone-alt icon_right phone-icon"></span>メール: <a target="_blank"
+                                                                                          href="mailto:info@NexTradge.jp?subject=お問い合わせ">info@NexTradge.jp</a>
+            </address>
+            <a class="btn btn-success" id="inquire" href="inquire.html">お問い合わせフォーム</a>
+        </div>
+        <div class="col-sm-8">
+            <h2 class="business_description">アクセス</h2>
+            <address>
+                〒104-XXXX　東京都中央区勝XXX2-XX-1　XXXXスカイレジテルXXX
+                <br> 都営大江戸線　勝どき駅（東京）より徒歩X分
+            </address>
+        </div>
+    </div>
+    <!-- /.row -->
+    <hr>
+    <div id="gMap" class="embed-responsive embed-responsive-4by3 map-bottom">
+        <!--<iframe id="gMapFrame" class="embed-responsive-item"-->
+                <!--src="https://www.google.com/maps/embed/v1/search?q=ネクストレージ株式会社&key=AIzaSyAhmkFqE0vg0moYzOmApK_BD3BMNgl93dM"-->
+                <!--allowfullscreen></iframe>-->
+
+        <iframe id="gMapFrame" class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.041736207563!2d139.59653557361167!3d35.45376115833933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185bed3f59c8fb%3A0x8f083256ba92c12f!2sYokohama+Business+Park!5e0!3m2!1szh-CN!2sjp!4v1465825827871"
+                frameborder="0" style="border:0"
+                allowfullscreen></iframe>
+    </div>
+</div>
+<div id="ty_footer"></div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ty_com.js"></script>
+<script>
+    // Better UI for not zoom map by default
+    var $gMapFrame = $('#gMapFrame');
+    $gMapFrame.css('pointer-events', 'none');
+
+    $('#gMap')
+        .click(function () {
+            $gMapFrame.css('pointer-events', 'auto');
+        })
+        .mouseleave(function () {
+            $gMapFrame.css('pointer-events', 'none');
+        });
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            };
+        i[r].l = 1 * new Date();
+        a = s.createElement(o);
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insNexTradgeBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-78227633-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+
+</html>
