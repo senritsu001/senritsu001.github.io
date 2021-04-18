@@ -48,6 +48,6 @@
 
 欢迎各位程序猿的咨询和加入。
 
-咨询地址：[info@NexTradge.jp](mailto:info@NexTradge.jp?subject=案件ID：TS001CN)
+咨询地址：[info@NexTradge.co.jp](mailto:info@NexTradge.co.jp?subject=案件ID：TS001CN)
 
 

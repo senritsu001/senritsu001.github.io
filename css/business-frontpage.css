@@ -490,3 +490,39 @@ a:hover {
 .map-bottom {
     margin-bottom: 35px;
 }
+
+.wrap-newsList-link a:before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #231815;
+    border-right: 1px solid #231815;
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -2px;
+    left: -2px;
+  }
+
+.newslist {
+    margin-top: 30px;
+}
+
+.ty-foorter {
+    margin-top: 300px;   
+}
+
+.business-header-news {
+    background: url('../images/news.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /* Margin top by footer height */
+    margin-top: 50px;
+}
+
+.address-icon{
+    color: #0071c5;
+    font-size: 3ex;
+}

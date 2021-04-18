@@ -3,6 +3,10 @@ $(function () {
         var matchKey = window.location.pathname;
         menu_active(matchKey);
     });
+    $("#ty_header_news").load("ty_header_news.html", function () {
+        var matchKey = window.location.pathname;
+        menu_active(matchKey);
+    });
     $("#ty_footer").load("ty_footer.html", function () {
         var myDate = new Date();
         var myYear = myDate.getFullYear();
